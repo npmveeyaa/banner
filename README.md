@@ -103,7 +103,7 @@ function App() {
 | `overlayClassName` | `string` | No | `''` | Additional CSS classes for overlay |
 | `titleClassName` | `string` | No | `''` | Additional CSS classes for title |
 | `descriptionClassName` | `string` | No | `''` | Additional CSS classes for description |
-| `highlightClassName` | `string` | No | `'theme-color-green'` | CSS class for highlighted text |
+| `highlightClassName` | `string` | No | `''` | CSS class for highlighted text (optional, if not provided, `**text**` will be rendered as plain text) |
 | `onBreadcrumbClick` | `function` | No | - | Callback when breadcrumb is clicked |
 | `style` | `object` | No | `{}` | Additional inline styles |
 
@@ -111,8 +111,9 @@ function App() {
 
 The component supports markdown-like syntax in titles:
 
-- `**text**` - Highlights text with the specified highlight class
-- Example: `"Welcome to **Our** Site"` → "Welcome to <span class='theme-color-green'>Our</span> Site"
+- `**text**` - Highlights text with the specified highlight class (if `highlightClassName` prop is provided)
+- Example: `"Welcome to **Our** Site"` with `highlightClassName="my-highlight"` → "Welcome to <span class='my-highlight'>Our</span> Site"
+- If `highlightClassName` is not provided, `**text**` will render as plain text without highlighting
 
 ## Styling
 
@@ -122,7 +123,7 @@ The component uses the following default CSS classes:
 - `.overlay` - Overlay div
 - `.banner-title` - Title heading
 - `.banner-desc` - Description paragraph
-- `.theme-color-green` - Default highlight class (can be customized)
+- Custom highlight class - Set via `highlightClassName` prop (optional)
 
 You can override these styles or add custom classes using the className props.
 

@@ -44,7 +44,7 @@ const Banner = ({
   overlayClassName = '',
   titleClassName = '',
   descriptionClassName = '',
-  highlightClassName = 'theme-color-green',
+  highlightClassName = '',
   onBreadcrumbClick,
   style = {}
 }) => {
@@ -57,10 +57,15 @@ const Banner = ({
    */
   const parseAsHtml = (htmlString) => {
     if (!htmlString) return '';
-    return htmlString.replace(
-      /\*\*(.*?)\*\*/g, 
-      `<span class="${highlightClassName}">$1</span>`
-    );
+    // Only add class if highlightClassName is provided
+    if (highlightClassName) {
+      return htmlString.replace(
+        /\*\*(.*?)\*\*/g, 
+        `<span class="${highlightClassName}">$1</span>`
+      );
+    }
+    // If no highlight class, just remove the ** markers
+    return htmlString.replace(/\*\*(.*?)\*\*/g, '$1');
   };
 
   /**

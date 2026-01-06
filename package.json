@@ -1,6 +1,6 @@
 {
   "name": "@veeyaainnovatives/banner",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A reusable Banner component with breadcrumb navigation and title parsing for React applications",
   "main": "dist/index.js",
   "module": "dist/index.esm.js",
