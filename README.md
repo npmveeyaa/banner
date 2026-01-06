@@ -58,11 +58,11 @@ import { Banner } from '@veeyaa/banner';
 
 function App() {
   const pageDetails = {
-    title: "Terms and **Conditions**",
-    description: "Please read these terms carefully",
+    title: "Our **Products**",
+    description: "Discover our innovative range of products",
     breadcrumb: [
       { name: "Home", link: "/" },
-      { name: "Terms", link: "/terms" }
+      { name: "Products", link: "/products" }
     ]
   };
 
@@ -132,5 +132,5 @@ MIT
 
 ## Author
 
-Veeyaa Innovatives
+[Veeyaa Innovatives](https://www.veeyaainnovatives.com)
 
