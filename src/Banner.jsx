@@ -1,6 +1,5 @@
 import React from 'react';
-import Breadcrumb from 'react-bootstrap/Breadcrumb';
-import { Container, Col, Row } from 'react-bootstrap';
+import { Breadcrumb, Container, Col, Row } from 'react-bootstrap';
 
 /**
  * Banner Component
