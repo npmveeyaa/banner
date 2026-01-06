@@ -1,10 +1,16 @@
 {
-  "name": "@veeyaa/banner",
+  "name": "@veeyaainnovatives/banner",
   "version": "1.0.0",
   "type": "module",
   "description": "A reusable Banner component with breadcrumb navigation and title parsing for React applications",
   "main": "dist/index.js",
   "module": "dist/index.esm.js",
+  "exports": {
+    ".": {
+      "import": "./dist/index.esm.js",
+      "require": "./dist/index.js"
+    }
+  },
   "files": [
     "dist",
     "README.md"
@@ -19,7 +25,7 @@
     "banner",
     "breadcrumb",
     "component",
-    "veeyaa"
+    "veeyaainnovatives"
   ],
   "author": "Veeyaa Innovatives",
   "license": "MIT",

@@ -1,4 +1,4 @@
-# @veeyaa/banner
+# @veeyaainnovatives/banner
 
 A reusable Banner component with breadcrumb navigation and title parsing for React applications.
 
@@ -14,7 +14,7 @@ A reusable Banner component with breadcrumb navigation and title parsing for Rea
 ## Installation
 
 ```bash
-npm install @veeyaa/banner
+npm install @veeyaainnovatives/banner
 ```
 
 ## Peer Dependencies
@@ -30,7 +30,7 @@ This package requires the following peer dependencies:
 ### Basic Example
 
 ```jsx
-import { Banner } from '@veeyaa/banner';
+import { Banner } from '@veeyaainnovatives/banner';
 
 function App() {
   const pageDetails = {
@@ -54,7 +54,7 @@ function App() {
 ### Advanced Example with Custom Styling
 
 ```jsx
-import { Banner } from '@veeyaa/banner';
+import { Banner } from '@veeyaainnovatives/banner';
 
 function App() {
   const pageDetails = {
