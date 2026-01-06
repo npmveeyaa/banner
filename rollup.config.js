@@ -22,12 +22,14 @@ export default {
   plugins: [
     peerDepsExternal(),
     resolve({
-      browser: true
+      browser: true,
+      extensions: ['.js', '.jsx', '.json']
     }),
     commonjs(),
     babel({
       babelHelpers: 'bundled',
       exclude: 'node_modules/**',
+      extensions: ['.js', '.jsx'],
       presets: [
         ['@babel/preset-env', { modules: false }],
         ['@babel/preset-react', { runtime: 'automatic' }]

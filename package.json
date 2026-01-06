@@ -1,6 +1,7 @@
 {
   "name": "@veeyaa/banner",
   "version": "1.0.0",
+  "type": "module",
   "description": "A reusable Banner component with breadcrumb navigation and title parsing for React applications",
   "main": "dist/index.js",
   "module": "dist/index.esm.js",
@@ -39,7 +40,11 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/veeyaainnovatives/banner.git"
+    "url": "https://github.com/npmveeyaa/banner.git"
+  },
+  "homepage": "https://github.com/npmveeyaa/banner#readme",
+  "bugs": {
+    "url": "https://github.com/npmveeyaa/banner/issues"
   }
 }
 
